@@ -73,6 +73,8 @@ ai-news-sum-backend/.venv/
 
 # Python bytecode and cache
 ai-news-sum-backend/__pycache__/
+ai-news-sum-backend/app/__pycache__
+ai-news-sum-backend/app/services/__pycache__
 ai-news-sum-backend/*.py[cod]
 
 # Database files
