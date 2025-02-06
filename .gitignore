@@ -1,0 +1,94 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+# ===========================
+# 🌍 GLOBAL IGNORE RULES
+# ===========================
+
+# OS/IDE specific files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignore environment files (for security)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.example  # (Keep only if needed for reference)
+
+# SSL keys (security)
+*.pem
+
+# ===========================
+# 🏗️ FRONTEND (Next.js)
+# ===========================
+
+# Dependencies
+ai-news-sum-frontend/node_modules/
+ai-news-sum-frontend/.next/
+
+# Environment variables
+/ai-news-sum-frontend/.env.local
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js build
+ai-news-sum-frontend/out/
+ai-news-sum-frontend/build/
+
+# Coverage reports (Jest, Cypress, etc.)
+ai-news-sum-frontend/coverage/
+
+# TypeScript cache and build info
+ai-news-sum-frontend/*.tsbuildinfo
+ai-news-sum-frontend/next-env.d.ts
+
+# Vercel deployment
+ai-news-sum-frontend/.vercel/
+
+# ===========================
+# 🐍 BACKEND (Flask/Python)
+# ===========================
+
+# Virtual Environment (Python)
+ai-news-sum-backend/venv/
+ai-news-sum-backend/.venv/
+
+# Environment variables
+/ai-news-sum-backend/.env
+
+
+# Python bytecode and cache
+ai-news-sum-backend/__pycache__/
+ai-news-sum-backend/*.py[cod]
+
+# Database files
+ai-news-sum-backend/*.sqlite3
+ai-news-sum-backend/*.db
+
+# Flask cache, logs, and temporary files
+ai-news-sum-backend/instance/
+ai-news-sum-backend/*.log
+
+# ===========================
+# 🚀 DEPLOYMENT CONFIGS
+# ===========================
+/.heroku/
+.envrc
+now.json
+dist/
+
+

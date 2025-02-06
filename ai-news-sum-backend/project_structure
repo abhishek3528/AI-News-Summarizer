@@ -1,0 +1,13 @@
+news_analyzer/
+├── requirements.txt
+├── config.py
+├── run.py
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   └── services/
+│       ├── __init__.py
+│       ├── news_scraper.py
+│       ├── summarizer.py
+│       └── sentiment_analyzer.py
+└── venv/ 
